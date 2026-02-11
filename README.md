@@ -2,6 +2,8 @@
 
 This is an assigment for Tampere University. It is a very simple Python application to view Finnish electricity production, consumption and emission factors for a specified duration. The results are displayed in a chart.
 
+The app uses data from Fingrid via their open data API: https://data.fingrid.fi/.
+
 ## Install
 
 - Install Python3 (and pip): https://www.python.org/downloads/
