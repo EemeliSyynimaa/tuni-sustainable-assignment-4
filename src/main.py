@@ -87,8 +87,7 @@ try:
     processed = process_data(data)
     result = calculate_averages(processed)
     plot(result)
-
-except requests.HTTPError:
-    print(f'Error {response.status_code}: {response.reason}')
-except ValueError:
-    print('Incorrect time format')
+except requests.RequestException as err:
+    print(err)
+except ValueError as err:
+    print(err)
